@@ -1,4 +1,4 @@
-# Student template
+# This is a cloned project of https://github.com/otula/COMP.SE.200-2023-2024-1.git
 
 ## Purpose of this repository
 
