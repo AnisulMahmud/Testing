@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "coverage": "nyc --reporter=lcov --reporter=html --reporter=json mocha --require test",
-    "test": "mocha --timeout 10000 --require @babel/register"
-  },
+    "test": "mocha test/**/*.js",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && coveralls < coverage.lcov"
+  }
+  ,
+
   "author": "",
   "license": "MIT",
   "devDependencies": {
@@ -15,8 +17,9 @@
     "@babel/preset-env": "^7.23.3",
     "@babel/register": "^7.22.15",
     "c8": "^7.3.5",
-    "chai": "^4.2.0",
+    "chai": "^4.3.10",
     "chai-http": "^4.3.0",
+    "coveralls": "^3.1.1",
     "eslint": "^7.12.1",
     "mocha": "^10.2.0",
     "node-mocks-http": "^1.9.0",
