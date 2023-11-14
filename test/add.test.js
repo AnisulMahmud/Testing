@@ -12,3 +12,9 @@ describe('add function', () => {
     expect(add(6, 4)).to.equal(10);
   });
 });
+
+describe('add function 2', () => {
+  it('adds 2 and 4 to equal 6', () => {
+    expect(add(2, 4)).to.equal(6);
+  });
+});
