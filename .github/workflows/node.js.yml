@@ -20,7 +20,11 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+       
+      - name: Coveralls
+        uses: coverallsapp/github-action@v2  
 
       - name: Run tests and coverage
         run: npm run coverage
-    
+      
+      
