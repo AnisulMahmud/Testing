@@ -5,8 +5,7 @@ const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
 
-const add = require('../src/add');
-
+import add from '../src/add';
 
 describe('add function', () => {
   it('adds 6 and 4 to equal 10', () => {
