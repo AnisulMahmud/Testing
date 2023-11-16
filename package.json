@@ -6,8 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "mocha --require @babel/register test/**/*.js",
-    "coverage": "c8 mocha --require @babel/register test/**/*.js --reporter=mocha-lcov-reporter --reporter-options=lcovOnly --report-dir=./coverage"
-
+    "coverage": "c8 mocha --require @babel/register test/**/*.js"
   },
   "author": "",
   "license": "MIT",
