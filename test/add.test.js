@@ -13,8 +13,9 @@ describe('add function', () => {
   });
 });
 
-describe('add function 2', () => {
-  it('adds 2 and 4 to equal 6', () => {
-    expect(add(2, 4)).to.equal(6);
+describe('add function', () => {
+  it('should add a negative number and zero correctly', () => {
+    
+    expect(add(-6, 4)).to.equal(-2);
   });
 });
