@@ -25,13 +25,8 @@ jobs:
         uses: coverallsapp/github-action@v2.2.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          coveralls-repo-token: ${{ secrets.COVERALLS_REPO_TOKEN }}
+          repo-token: ${{ secrets.COVERALLS_REPO_TOKEN }}
 
       - name: Run tests and coverage
         run: npm run coverage
       
-      - name: Debug Info
-        run: |
-          echo "Repository: $GITHUB_REPOSITORY"
-          echo "GitHub Token: ${{ secrets.GITHUB_TOKEN }}"
-          echo "Coveralls Repo Token: ${{ secrets.COVERALLS_REPO_TOKEN }}"
