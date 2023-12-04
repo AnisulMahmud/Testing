@@ -1,21 +1,31 @@
-// const puppeteer = require("puppeteer");
-// const chai = require("chai");
 import chai from "chai";
 const expect = chai.expect;
-// const chaiHttp = require("chai-http");
 import chaiHttp from "chai-http";
 chai.use(chaiHttp);
 
 import add from "../src/add.js";
 
-describe("add function", () => {
-  it("adds 6 and 4 to equal 10", () => {
-    expect(add(6, 4)).to.equal(10);
-  });
-});
+describe('add function', () => {
 
-describe("add function 2", () => {
-  it("adds -2 and 4 to equal 6", () => {
-    expect(add(-2, 4)).to.equal(2);
+  // Test case 1
+  it('should add two positive numbers correctly', () => {
+    const result = add(6, 4);
+    expect(result).to.equal(10);
   });
+
+  // Test case 2
+  it('should add a positive and a negative number correctly', () => {
+    const result = add(6, -4);
+    expect(result).to.equal(2);
+  });
+
+  // Test case 3
+  it('should add two negative numbers correctly', () => {
+    const result = add(-6, -4);
+    expect(result).to.equal(-10);
+  });
+
+
+
+
 });
