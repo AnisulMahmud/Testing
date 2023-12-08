@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/add.js</title>
+    <title>Code coverage report for src/divide.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> add.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> divide.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -102,21 +102,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import createMathOperation from './.internal/createMathOperation.js'
 &nbsp;
 /**
- * Adds two numbers.
+ * Divide two numbers.
  *
- * @since 3.4.0
+ * @since 4.7.0
  * @category Math
- * @param {number} augend The first number in an addition.
- * @param {number} addend The second number in an addition.
- * @returns {number} Returns the total.
+ * @param {number} dividend The first number in a division.
+ * @param {number} divisor The second number in a division.
+ * @returns {number} Returns the quotient.
  * @example
  *
- * add(6, 4)
- * // =&gt; 10
+ * divide(6, 4)
+ * // =&gt; 1.5
  */
-const add = createMathOperation((augend, addend) =&gt; augend + addend, 0)
+const divide = createMathOperation((dividend, divisor) =&gt; divisor / divisor, 1)
 &nbsp;
-export default add
+export default divide
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

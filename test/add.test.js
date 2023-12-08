@@ -25,6 +25,12 @@ describe('add function', () => {
     expect(result).to.equal(-10);
   });
 
+  // Test case 4
+  it('should add two double numbers correctly', () => {
+    const result = add(6.4, 4.1);
+    expect(result).to.equal(10.5);
+  });
+
 
 
 
