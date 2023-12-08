@@ -29,6 +29,7 @@ jobs:
         
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v2.2.3
+        if: always()
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
             
